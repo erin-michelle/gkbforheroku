@@ -248,24 +248,28 @@ margin-left: 5%;
 }
 
 .iamgroup {
-  height: 100%;
-  min-height: 20vh;
+ /* height: 100%;*/
+  min-width: 20vh;
   margin: 0 auto;
   text-align: center;
   display: block;
+
 }
 
 
 .iam img {
   display: block;
-  height: 100%;
+  height: auto;
   width: 100%;
   max-width: 130px;
-  max-height: 130px;
-  padding-bottom: .5em;
+/*  max-height: 130px;
+*/  padding-bottom: .5em;
   margin: 0 auto;
 }
 
+.iam p {
+  margin-left: 40%;
+}
 .clear {
   clear: both; 
 }
@@ -289,8 +293,9 @@ header p {
 
 .header-wrapper {
   width: 100%;
-  height: auto;
+  height: 40em;
   min-height: 1px;
+  overflow: hidden;
 }
 /* End Header Section */
 
@@ -343,6 +348,7 @@ header p {
   color: #000035;
   text-align: center;
   margin-bottom: 7%;
+  margin-left: 2%;
   font-size: 3em;
   letter-spacing: 0.06em;
 }
@@ -1595,9 +1601,21 @@ div.hours-container {
     font-size: 1.5em;
   }
   
-  .iam img {
-    min-height: 150px;
+  .iamgroup {
+    margin: auto 0;
   }
+
+  .iam img {
+    min-width: 4em;
+    margin-left: 30%
+  }
+
+  .iam p {
+    margin-top: 5%;
+    margin-left: 42;
+    vertical-align: bottom;
+  }
+
 
   .announcements {
     width: 100%;
@@ -1651,21 +1669,18 @@ div.hours-container {
   .navigation-bar {
     padding: 0;
   }
-
-  .iam img {
-    max-width: 100px;
-    max-height: 100px;
-    height: 100px;
-  }
-
-  .tagline {
+ .tagline {
     font-size: 5em;
   }
 
-  #iamh1 {
-    font-size: 1.8em;
-    margin-top: 0;
-    margin-bottom: 0.8em;
+  .iam a {
+    display: block;
+    margin-right: 10em;
+  }
+  .iam img {
+    max-width: 5em;
+    /*max-height: 100px;*/
+    height: auto;
   }
 
   .newsboxes {
@@ -1718,8 +1733,9 @@ div.hours-container {
   
   ul.topnav li.icon > a {
     width: 100%;
-    height: 50px;
-    line-height: 35px;
+    height: 50%;
+    line-height: .85em;
+    font-size: 2em;
   }
 
   ul.topnav {
@@ -1772,25 +1788,71 @@ div.hours-container {
   }
 
   .community h1 {
-    font-size: 0.9em;
+    font-size: 2em;
+    margin-top: 20%;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .communityboxes {
-    width: 100%;
+    width: 90%;
     height: 100%;
     display: block;
     text-align: left;
     vertical-align: top;
     color: white;
+    margin: auto;
+
   }
 
+  .img-community {
+    margin: auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  margin-bottom: 10%;
+  }
+
+  .img-community > h3 {
+    margin: auto;
+
+  }
+
+  #transport {
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/static/img/commute.jpeg") center center no-repeat;
+  background-size: auto 100%;
+  
+}
+
+#work4bikes {
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/static/img/smile.jpeg") center center no-repeat;
+  background-size: auto 100%;
+
+}
+
+#sponsor-bike {
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/static/img/bike5.jpg") center center no-repeat;
+  background-size: auto 100%;
+}
+
+#saturday-clinic {
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/static/img/gears.jpeg") center center no-repeat;
+  background-size: auto 100%;
+
+}
+
+#tools {
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("/static/img/tools.jpg") center center no-repeat;
+  background-size: auto 100%;
+
+}
+
+#karmakids {
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url("/static/img/kids.jpg") center center no-repeat;
+}
   .communityboxes:nth-child(2n) {
     margin-left: 0;
-  }
-
-  .communityboxes img {
-    width: 100%;
-    height: 18em;
   }
 
   .community > p {
@@ -1798,6 +1860,18 @@ div.hours-container {
     color: white;
     width: 80%;
     text-align: center;
+  }
+
+  .communitycontent {
+     margin: auto;
+  }
+
+  .invisible {
+    visibility: hidden;
+  }
+
+  .img-community:hover {
+     background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70));
   }
 
   .footer-list {
